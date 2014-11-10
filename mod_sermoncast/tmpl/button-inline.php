@@ -11,7 +11,6 @@ JHtml::_('bootstrap.tooltip');
 JHtml::_('behavior.modal');
 ?>
 <div class="syndicate-module<?php echo $params->get('$moduleclass_sfx'); ?>">
-	<p class="sc_subscript">
 		<?php if ($params->get('sc_showpcast')) : ?>
 			<?php if ($params->get('sc_otherlink')) : ?>
 				<?php $link = $params->get('sc_otherlink'); ?>
@@ -37,6 +36,5 @@ JHtml::_('behavior.modal');
 				<a class="modal btn" href="<?php echo $url; ?>" rel="<?php echo $rel; ?>">
 					<?php echo JText::_('MOD_SERMONCAST_HELP'); ?>
 				</a>
-			</p>
 		<?php endif; ?>
 </div>
